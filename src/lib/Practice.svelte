@@ -36,7 +36,7 @@
 
   function nextRelation() {
     grid = {}
-    const size = answered === 0 ? 8 : Math.floor(Math.random() * 3) + 2
+    const size = answered === 0 ? 3 : Math.floor(Math.random() * 3) + 2
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     for (let i = 0; i < size; i++) {
