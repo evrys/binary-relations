@@ -19,5 +19,11 @@
 		"typescript": "^4.7.4",
 		"vite": "^3.1.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@types/lodash": "^4.14.185",
+		"bootstrap": "^5.2.1",
+		"calculate-size": "^1.1.1",
+		"lodash": "^4.17.21"
+	}
 }
