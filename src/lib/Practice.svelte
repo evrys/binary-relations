@@ -42,7 +42,7 @@
     for (let i = 0; i < size; i++) {
       grid[alpha[i]] = {}
       for (let j = 0; j < size; j++) {
-        grid[alpha[i]][alpha[j]] = Math.random() > 0.8 ? true : false
+        grid[alpha[i]][alpha[j]] = Math.random() > 0.5 ? true : false
       }
     }
 
