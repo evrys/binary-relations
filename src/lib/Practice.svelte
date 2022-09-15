@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { uniq, sampleSize } from "lodash"
+  import { uniq } from "lodash"
   import calculateSize from "calculate-size"
   import {
     type RelationGrid,
@@ -124,6 +124,10 @@
   )
 </script>
 
+<svelte:head>
+  <title>Practice binary relations</title>
+</svelte:head>
+
 <div class="Practice">
   <div class="visual">
     <div class="grid">
@@ -213,12 +217,14 @@
     {#if finishedRelation}
       <button class="btn btn-success" on:click={nextRelation}>Next</button>
     {:else}
-      <button class="btn btn-success" on:click={() => answer(true)}
-        >{currentCheck.check}</button
-      >
-      <button class="btn btn-danger" on:click={() => answer(false)}
-        >not {currentCheck.check}</button
-      >
+      {#key currentCheck.check}
+        <button class="btn btn-success" on:click={() => answer(true)}
+          >{currentCheck.check}</button
+        >
+        <button class="btn btn-danger" on:click={() => answer(false)}
+          >not {currentCheck.check}</button
+        >
+      {/key}
     {/if}
   </div>
 </div>

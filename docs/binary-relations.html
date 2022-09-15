@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content=""><title>Properties of binary relations</title>
+	<link href="./_app/immutable/assets/_page-0c6a5034.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-85047c74.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-37015614.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-37d1927a.js">
+	<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-07f2a1ec.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_layout-1daba58d.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/binary-relations/_page.svelte-a6d8b93b.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-e852a150.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+<main class="svelte-b0nbsb"><header class="svelte-b0nbsb"><div class="container"><h1>Properties of binary relations</h1>
+      <p>This page covers the common properties of binary relations, with
+        illustrative examples.
+      </p></div></header>
+  <section class="container svelte-b0nbsb"><h2>Functional</h2>
+    <div class="with-figure svelte-b0nbsb"><div class="explanation svelte-b0nbsb"><p>A relation is functional when each node on the left points to <em>at most</em> one node on the right.
+        </p>
+        <p>We describe this as <em>functional</em> because it mirrors the behavior
+          of a mathematical function, which always has one defined output for a given
+          input value. A function can be viewed as a binary relation between the
+          domain and codomain of the function.
+        </p>
+        <p>Many of the terms used to describe relations were originally defined <a href="https://hsm.stackexchange.com/questions/4929/history-of-the-definition-of-injective-surjective-function">in the context of functions</a>. The key difference is that a valid function is always by definition
+          functional, but binary relations need not be.
+        </p>
+        <p>You can quickly identify functional relations by looking at the grid
+          of connections. A relation is functional if <strong>no row has more than one tick</strong>.
+        </p></div>
+      <figure class="svelte-b0nbsb">
+        <figcaption class="svelte-b0nbsb">The functional squirrel doesn&#39;t like to share his acorn. He feels he
+          earned it with his clever functions.
+        </figcaption></figure></div></section>
+  <section class="container svelte-b0nbsb"><h2>Injective</h2>
+    <div class="with-figure svelte-b0nbsb"><div class="explanation svelte-b0nbsb"><p>A relation is injective when each node on the right receives <em>at most</em> one connection from the left.
+        </p>
+        <p>A grid shows an injective relation if <strong>no column has more than one tick</strong>.
+        </p></div>
+      <figure class="svelte-b0nbsb">
+        <figcaption class="svelte-b0nbsb">The injective squirrel can&#39;t have more than one acorn each. The
+          squirrels are trying to reduce wealth inequality.
+        </figcaption></figure></div></section>
+  <section class="container svelte-b0nbsb"><h2>Total</h2>
+    <div class="with-figure svelte-b0nbsb"><div class="explanation svelte-b0nbsb"><p>A relation is total or <em>left-total</em> when every node on the left
+          has at least one connection.
+        </p>
+        <p>A grid shows a total relation if <strong>every row has a tick</strong>.
+        </p></div>
+      <figure class="svelte-b0nbsb">
+        <figcaption class="svelte-b0nbsb">Every left-total acorn is always assigned to a squirrel. They&#39;re
+          trying to eliminate food waste!
+        </figcaption></figure></div></section>
+  <section class="container svelte-b0nbsb"><h2>Surjective</h2>
+    <div class="with-figure svelte-b0nbsb"><div class="explanation svelte-b0nbsb"><p>A relation is surjective or <em>right-total</em> when every node on the
+          right has at least one connection.
+        </p>
+        <p>A grid shows a surjective relation if <strong>every column has a tick</strong>.
+        </p></div>
+      <figure class="svelte-b0nbsb">
+
+        <figcaption class="svelte-b0nbsb">Every surjective squirrel gets to at least share one acorn. The
+          squirrels have announced a welfare policy.
+        </figcaption></figure></div></section>
+  <section class="container svelte-b0nbsb"><h2>Bijective</h2>
+    <div class="with-figure svelte-b0nbsb"><div class="explanation svelte-b0nbsb"><p>A relation is bijective when it is functional, total, injective <em>and</em> surjective. Every node on both sides must have a connection, and both
+          ends of every connection must be unique.
+        </p>
+        <p>The grid shows a bijective relation if <strong>every row and every column has exactly one tick</strong>.
+        </p></div>
+      <figure class="svelte-b0nbsb">
+        <figcaption class="svelte-b0nbsb">Every bijective squirrel gets exactly one acorn, and every acorn goes
+          to exactly one squirrel. It&#39;s a time of strict rationing during the
+          squirrel war.
+        </figcaption></figure></div></section>
+  <section class="practice svelte-b0nbsb"><div class="d-flex align-items-center justify-content-center"><a class="btn btn-lg btn-success" href="/binary-relations/practice">Practice!</a></div></section>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="14yma7v">
+		import { start } from "./_app/immutable/start-85047c74.js";
+
+		start({
+			env: {},
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2],
+				params: {},
+				routeId: "binary-relations",
+				data: (function(a){return [a,a]}(null)),
+				form: null
+			},
+			paths: {"base":"","assets":""},
+			target: document.querySelector('[data-sveltekit-hydrate="14yma7v"]').parentNode,
+			trailing_slash: "never"
+		});
+	</script>
+	</div>
+	</body>
+</html>

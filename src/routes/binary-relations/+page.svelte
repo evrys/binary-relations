@@ -1,7 +1,11 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
-  import RelationEditor from "$lib/RelationEditor.svelte";
+  import { browser } from "$app/environment"
+  import RelationEditor from "$lib/RelationEditor.svelte"
 </script>
+
+<svelte:head>
+  <title>Properties of binary relations</title>
+</svelte:head>
 
 <main>
   <header>

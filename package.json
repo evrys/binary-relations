@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.43",
 		"@types/lodash": "^4.14.185",
 		"bootstrap": "^5.2.1",
 		"calculate-size": "^1.1.1",
