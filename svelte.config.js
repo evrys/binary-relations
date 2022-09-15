@@ -14,7 +14,8 @@ const config = {
     }),
     paths: {
       base: dev ? '' : '/binary-relations'
-    }
+    },
+    trailingSlash: 'always'
   }
 }
 
