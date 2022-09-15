@@ -24,6 +24,7 @@
 		"@types/lodash": "^4.14.185",
 		"bootstrap": "^5.2.1",
 		"calculate-size": "^1.1.1",
-		"lodash": "^4.17.21"
+		"lodash": "^4.17.21",
+		"sass": "^1.54.9"
 	}
 }

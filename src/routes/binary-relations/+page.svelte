@@ -162,6 +162,13 @@
       </figure>
     </div>
   </section>
+  <section class="practice">
+    <div class="d-flex align-items-center justify-content-center">
+      <a class="btn btn-lg btn-success" href="/binary-relations/practice"
+        >Practice!</a
+      >
+    </div>
+  </section>
 </main>
 
 <style>
@@ -199,6 +206,12 @@
 
   figcaption {
     text-align: center;
+  }
+
+  .practice {
+    margin-top: 4rem;
+    border-top: 1px solid #ccc;
+    padding-top: 4rem;
   }
 
   @media (max-width: 900px) {
