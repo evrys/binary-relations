@@ -18,13 +18,13 @@
   }[] = []
   let checkIndex = 0
 
-  let answered = 0
+  let completed = 0
   let correct = 0
   let incorrectShake: boolean = false
   let shakeTimeout: number | undefined
   let quizRef: HTMLDivElement
   let madeMistake: boolean = false
-  $: accuracy = ((correct / answered) * 100).toFixed(0)
+  $: accuracy = ((correct / completed) * 100).toFixed(0)
 
   const possibleChecks: RelationCheck[] = [
     "functional",
@@ -36,7 +36,7 @@
 
   function nextRelation() {
     grid = {}
-    const size = answered === 0 ? 3 : Math.floor(Math.random() * 3) + 2
+    const size = completed === 0 ? 3 : Math.floor(Math.random() * 3) + 2
     const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     for (let i = 0; i < size; i++) {
@@ -56,14 +56,16 @@
   }
 
   function answer(attempt: boolean) {
-    answered += 1
     if (attempt === currentCheck.applies) {
       currentCheck.visible = true
       checks = Array.from(checks)
       checkIndex++
-      correct += 1
-      if (checkIndex === checks.length && !madeMistake) {
-        effects.confetti.spawnAt(quizRef)
+      if (checkIndex === checks.length) {
+        completed += 1
+        if (!madeMistake) {
+          correct += 1
+          effects.confetti.spawnAt(quizRef)
+        }
       }
     } else {
       madeMistake = true
@@ -197,8 +199,8 @@
     </div>
 
     <div class="sidebar">
-      <div>Answered: {answered}</div>
-      <div>Correct: {correct}</div>
+      <div>Completed: {completed}</div>
+      <div>Perfect: {correct}</div>
       <div>
         Accuracy: {#if accuracy === "NaN"}TBD{:else}{accuracy}%{/if}
       </div>
